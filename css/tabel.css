@@ -1,0 +1,73 @@
+/* Reset Dasar */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+
+:root {
+    --navy-utama: #003366;
+    --navy-gelap: #00254a;
+    --biru-muda: #eef2f7;
+    --putih: #ffffff;
+}
+
+body { background-color: #f5f5f5; }
+
+/* Header */
+header { background-color: var(--navy-utama); color: white; padding: 15px 20px; }
+.header-content { display: flex; align-items: center; gap: 15px; }
+.logo-header { width: 100px; height: auto; }
+.header-title { font-weight: bold; font-size: 1.5rem; }
+
+/* Layout */
+.main-container { display: flex; min-height: calc(100vh - 120px); }
+
+/* Sidebar */
+.sidebar-manual { width: 230px; background:#ffffff; color: white; }
+.menu-list { list-style: none; padding-top: 10px; }
+.menu-list li a {
+    display: block; padding: 15px 20px; color: #0f0f0f;
+    text-decoration: none; border-bottom: 1px solid #e6e7e7;
+}
+.menu-list li a:hover, .menu-list li a.aktif {
+    background: var(--navy-utama); color: rgb(251, 248, 248);
+}
+.logout-link { color: #ff6666 !important; }
+
+/* Content Area */
+.main-content { flex: 1; padding: 30px; }
+.content-header { 
+    display: flex; justify-content: space-between; 
+    align-items: center; margin-bottom: 20px; 
+}
+.judul-halaman { color: var(--navy-utama); }
+
+/* Button Tambah */
+.btn-tambah {
+    background: #28a745; color: white; padding: 10px 20px;
+    text-decoration: none; border-radius: 25px; font-weight: bold;
+}
+
+/* Tabel */
+.table-container { 
+    background: white; padding: 20px; border-radius: 10px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1); overflow-x: auto;
+}
+.custom-table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+.custom-table thead { background: var(--navy-utama); color: white; }
+.custom-table th, .custom-table td { padding: 12px 15px; text-align: left; border-bottom: 1px solid #ddd; }
+.custom-table tbody tr:hover { background: var(--biru-muda); }
+
+.img-siswa { width: 50px; height: 50px; border-radius: 50%; object-fit: cover; border: 2px solid #ddd; }
+.text-center { text-align: center; }
+
+/* Button Aksi */
+.btn-aksi { 
+    padding: 5px 12px; text-decoration: none; border-radius: 4px; 
+    font-size: 0.85rem; margin: 0 2px; display: inline-block;
+}
+.edit { background: #ffc107; color: #000; }
+.hapus { background: #dc3545; color: #fff; }
+
+/* Footer */
+footer { 
+    background:var(--navy-gelap); color: white; text-align: center; 
+    padding: 15px; font-size: 0.9rem;
+}

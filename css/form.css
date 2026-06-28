@@ -1,0 +1,74 @@
+/* Reset Dasar */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+
+:root {
+    --navy-utama: #003366;
+    --navy-gelap: #002a54;
+    --biru-medium: #00509e;
+    --abu-bg: #f4f7f9;
+}
+
+body { background-color: var(--abu-bg); }
+
+/* Header */
+header { background-color: var(--navy-utama); color: white; padding: 15px 5%; }
+.header-content { display: flex; align-items: center; gap: 15px; }
+.logo-header { height: 100px; width: auto; }
+.header-title { font-weight: bold; font-size: 1.5rem; }
+
+/* Layout */
+.main-container { display: flex; min-height: 80vh; }
+
+/* Sidebar */
+aside { width: 220px; background: white; border-right: 1px solid #ddd; padding-top: 20px; }
+.menu-sidebar { list-style: none; }
+.menu-sidebar li a {
+    display: block; padding: 15px 25px; color: #333;
+    text-decoration: none; transition: 0.3s;
+}
+.menu-sidebar li a:hover, .menu-sidebar li a.aktif {
+    background-color: var(--biru-medium); color: white;
+}
+.menu-logout { color: #d9534f !important; border-top: 1px solid #eee; margin-top: 10px; }
+
+/* Form Content */
+.main-content { flex: 1; padding: 40px; display: flex; justify-content: center; }
+.container-form {
+    background: white; width: 100%; max-width: 600px;
+    padding: 30px; border-radius: 12px; box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+.form-title { color: var(--navy-utama); margin-bottom: 15px; }
+.divider { margin-bottom: 25px; border: 0; border-top: 1px solid #eee; }
+
+/* Field & Input */
+.field-group { margin-bottom: 20px; }
+.field-group label { display: block; margin-bottom: 8px; font-weight: 600; color: #555; }
+.input-custom {
+    width: 100%; padding: 12px; border: 1px solid #ccc;
+    border-radius: 25px; outline: none; font-size: 1rem;
+}
+.input-custom:focus { border-color: var(--biru-medium); }
+.radio-options { display: flex; gap: 20px; padding: 5px 0; }
+
+/* Tombol */
+.action-buttons { display: flex; gap: 10px; margin-top: 20px; }
+.btn-submit {
+    background: var(--navy-utama); color: white; padding: 12px 25px;
+    border: none; border-radius: 25px; cursor: pointer; font-weight: bold;
+}
+.btn-submit:hover { background: var(--biru-medium); }
+.btn-reset {
+    background: #777; color: white; padding: 12px 25px;
+    border: none; border-radius: 25px; cursor: pointer;
+}
+
+/* Footer Rata Tengah */
+.footer-bottom {
+    background: var(--navy-gelap); color: white;
+    text-align: center; padding: 20px 0; width: 100%;
+}
+
+.input-custom {
+    border-color:  #d9534f;
+    
+}

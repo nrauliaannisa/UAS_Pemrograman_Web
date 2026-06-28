@@ -1,0 +1,119 @@
+/* Reset Dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    /* Background dengan overlay biru gelap */
+    background: linear-gradient(rgba(0, 51, 102, 0.8), rgba(0, 51, 102, 0.8)), 
+                url('https://images.unsplash.com/photo-1523050853063-915894bdc828?auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+}
+
+.login-box {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    text-align: center;
+}
+
+/* Styling Header Logo & Nama Sekolah */
+.header-login {
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 100px; /* Ukuran logo */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.header-login h1 {
+    font-size: 1.2rem;
+    color: #003366; /* Navy sebagai warna utama */
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #555;
+    font-size: 1rem;
+    border-bottom: 2px solid #003366;
+    padding-bottom: 10px;
+}
+
+/* Styling Input */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 2px solid #00509e; /* Biru Medium saat fokus */
+}
+
+/* Styling Tombol Login */
+input[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #003366; /* Navy sebagai warna utama */
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #00509e; /* Biru Medium sebagai warna hover */
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    outline: none;
+    background-color: #ffffff;
+    transition: all 0.3s ease; /* Membuat transisi warna jadi halus */
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover {
+    border-color: #00509e; 
+    background-color: #f0f7ff; 
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border: 2px solid #003366; /* Berubah jadi Navy */
+    box-shadow: 0 0 8px rgba(0, 80, 158, 0.3); /* Memberikan efek cahaya/glow biru */
+    background-color: #ffffff;
+}

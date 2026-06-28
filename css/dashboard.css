@@ -1,0 +1,75 @@
+/* Reset Dasar */
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', Arial, sans-serif; }
+
+:root {
+    --navy-utama: #003366;
+    --navy-gelap: #00254a;
+    --biru-muda: #eef2f7;
+    --putih: #ffffff;
+    --aksen-orange: #f39c12;
+}
+
+body { background-color: #f0f2f5; }
+
+/* Header */
+header { background-color: var(--navy-utama); color: white; padding: 15px 30px; }
+.header-content { display: flex; align-items: center; gap: 15px; }
+.logo-header { height: 100px; width: auto; }
+.header-title { font-weight: bold; font-size: 1.5rem; }
+
+/* Layout Utama */
+.main-container { display: flex; min-height: 85vh; }
+
+/* Sidebar */
+.sidebar-navy { width: 220px; background: #ffffff; color: white; padding-top: 10px; }
+.menu-list { list-style: none; }
+.menu-list li a {
+    display: block; padding: 18px 25px; color: #0d0d0d;
+    text-decoration: none; border-bottom: 1px solid rgba(19, 19, 19, 0.05);
+}
+.menu-list li a:hover, .menu-list li a.aktif {
+    background: var(--navy-utama); color: white;
+}
+.logout-link { color: #ff8080 !important; }
+
+/* Main Content */
+.main-content { flex: 1; padding: 40px; }
+
+/* Welcome Banner */
+.welcome-banner {
+    background: linear-gradient(135deg, var(--navy-utama), #00509e);
+    color: white; padding: 40px; border-radius: 15px;
+    margin-bottom: 30px; box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+}
+.banner-title { font-size: 1.8rem; margin-bottom: 5px; }
+.banner-subtitle { opacity: 0.8; font-size: 1rem; }
+
+/* Stats Grid (Pengganti Row Bootstrap) */
+.stats-container {
+    display: flex; gap: 20px; flex-wrap: wrap;
+}
+
+/* Stat Card Manual */
+.stat-card {
+    background: white; flex: 1; min-width: 250px;
+    padding: 25px; border-radius: 12px;
+    display: flex; align-items: center; gap: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
+.stat-icon {
+    width: 60px; height: 60px; border-radius: 12px;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: bold; font-size: 1.5rem; color: white;
+}
+.icon-siswa { background-color: var(--navy-utama); }
+.icon-jurusan { background-color: #007bff; }
+.icon-kalender { background-color: var(--aksen-orange); }
+
+.stat-label { color: #777; font-size: 0.9rem; margin-bottom: 5px; }
+.stat-number { color: #333; font-size: 1.5rem; font-weight: bold; }
+
+/* Footer */
+.footer-bottom {
+    background:var(--navy-gelap); color: #ffffff;
+    text-align: center; padding: 20px; font-size: 0.85rem;
+}
